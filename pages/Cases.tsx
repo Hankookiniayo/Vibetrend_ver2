@@ -55,7 +55,7 @@ const CaseCard = ({ data, reversed }: any) => (
       </blockquote>
 
       <button className="inline-flex items-center gap-2 text-white font-bold group">
-        상세 분석 리포트 보기 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        유튜브 분석 리포트 보기 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
       </button>
     </div>
   </div>
@@ -66,35 +66,35 @@ const Cases: React.FC = () => {
     {
       id: 'case1',
       name: '김OO님',
-      role: '뷰티 크리에이터',
+      role: '뷰티 유튜버',
       subscribers: '구독자 3만',
-      problem: '신규 콘텐츠 아이디어가 고갈되고 경쟁 채널들 사이에서 성장이 정체되었습니다.',
+      problem: '신규 콘텐츠 아이디어가 고갈되고 유튜브 알고리즘 정체기에 빠졌습니다.',
       solution: 'VibeTrend AI가 포착한 조기 트렌드로 3개월 만에 구독자 73% 성장',
-      result: '조회수 평균 15만에서 80만으로 5.3배 증가하였으며, 수익은 월 180만원으로 3.6배 성장했습니다.',
+      result: '조회수 평균 15만에서 80만으로 5.3배 증가하였으며, 유튜브 수익은 3.6배 성장했습니다.',
       metrics: [{ label: '조회수', value: '5.3배↑' }, { label: '구독자', value: '+2.2만' }],
-      quote: '이제 트렌드를 쫓지 않고 선도합니다. AI가 추천해준 키워드 덕분에 제 채널의 두 번째 전성기가 시작되었어요.',
+      quote: '유튜브 트렌드를 미리 발견하는 것이 얼마나 중요한지 깨달았습니다. Gemini AI의 키워드 추천이 결정적이었습니다.',
     },
     {
       id: 'case2',
       name: '박OO님',
-      role: '게임 스트리머',
+      role: '게임 유튜버',
       subscribers: '구독자 1만',
-      problem: '핫한 게임을 하려 해도 이미 대형 유튜버들이 선점하여 노출 기회를 잡기 어려웠습니다.',
-      solution: '플랫폼 교차 분석을 통한 검색 결과 1위 달성 전략',
-      result: 'TikTok에서 시작된 인디 게임 유행을 YouTube에서 누구보다 빠르게 공략하여 국내 검색 1위를 차지했습니다.',
-      metrics: [{ label: '검색 순위', value: '1위' }, { label: '조회수', value: '50만+' }],
-      quote: 'VibeTrend 없었으면 불가능했을 거예요. 남들보다 2주 빠르게 트렌드를 잡는 것이 얼마나 강력한지 깨달았습니다.',
+      problem: 'Shorts와 본영상의 알고리즘 연결이 되지 않아 채널 성장이 불균형했습니다.',
+      solution: 'Shorts 트렌드를 본영상으로 연결하는 교차 알고리즘 전략',
+      result: 'Shorts에서 발생한 트렌드를 즉시 본영상 기획에 반영하여, 관련 키워드 국내 검색 1위를 차지했습니다.',
+      metrics: [{ label: '검색 순위', value: '1위' }, { label: '본영상 조회수', value: '+300%' }],
+      quote: 'VibeTrend의 Shorts 분석 기능 덕분에 본영상 조회수까지 동반 상승시킬 수 있었습니다. 진짜 유튜브 전문가를 위한 도구예요.',
     },
     {
       id: 'case3',
       name: 'ㅇㅇ컴퍼니',
-      role: '마케팅 에이전시',
+      role: '유튜브 마케팅 에이전시',
       subscribers: '팀원 5명',
-      problem: '수작업 트렌드 리서치에 매주 15시간 이상 소요되어 업무 효율이 매우 낮았습니다.',
-      solution: 'Business API 연동으로 리서치 업무 87% 자동화 및 고객 만족도 향상',
-      result: '리서치 시간을 주 2시간으로 단축하고, 데이터 기반의 캠페인 전략으로 광고 성과를 40% 향상시켰습니다.',
-      metrics: [{ label: '시간 단축', value: '87%↓' }, { label: '광고 성과', value: '+40%' }],
-      quote: '우리 워크플로우에 VibeTrend를 통합한 것이 최고의 선택이었습니다. 생산성이 비교할 수 없을 만큼 달라졌어요.',
+      problem: '매일 수천 개의 유튜브 영상을 모니터링하며 트렌드를 찾는 데 너무 많은 시간이 소요되었습니다.',
+      solution: 'Business API 연동으로 유튜브 트렌드 분석 리서치 업무 87% 자동화',
+      result: '매주 15시간 걸리던 리서치 업무를 2시간으로 단축하고, 클라이언트 유튜브 채널 성과를 평균 40% 향상시켰습니다.',
+      metrics: [{ label: '업무 단축', value: '87%↓' }, { label: '채널 성과', value: '+40%' }],
+      quote: '유튜브 데이터에 특화된 Business API 덕분에 에이전시의 전문성이 한 단계 업그레이드되었습니다.',
     },
   ];
 
@@ -102,8 +102,8 @@ const Cases: React.FC = () => {
     <div className="pt-40 pb-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-24">
-          <h1 className="text-5xl font-black mb-6">성공은 우연이 아닙니다</h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">VibeTrend와 함께 트렌드를 지배한 크리에이터들의 실제 이야기를 확인하세요.</p>
+          <h1 className="text-5xl font-black mb-6">유튜브 성공은 우연이 아닙니다</h1>
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">VibeTrend와 함께 유튜브 생태계를 지배한 크리에이터들의 실제 이야기입니다.</p>
         </div>
 
         {cases.map((c, i) => (
@@ -111,8 +111,8 @@ const Cases: React.FC = () => {
         ))}
 
         <div className="bg-zinc-950 p-16 rounded-[48px] text-center border border-white/5">
-          <h2 className="text-4xl font-black mb-8">당신의 성공 스토리를 만들어보세요</h2>
-          <p className="text-zinc-500 mb-12 max-w-lg mx-auto">지금 바로 14일 무료 체험을 시작하고, 데이터가 만드는 놀라운 변화를 경험하세요.</p>
+          <h2 className="text-4xl font-black mb-8">당신의 유튜브 성공 스토리를 만드세요</h2>
+          <p className="text-zinc-500 mb-12 max-w-lg mx-auto">지금 바로 14일 무료 체험을 시작하고, 데이터가 만드는 채널의 변화를 경험하세요.</p>
           <button className="px-12 py-5 bg-white text-black font-black rounded-full hover:scale-105 transition-all shadow-2xl shadow-white/5">
             무료 체험 시작하기
           </button>
